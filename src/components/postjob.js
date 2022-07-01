@@ -3,6 +3,8 @@ import "../CSS/postjobs_bootstrap.min.css";
 import "../CSS/postjobs_fstyle.css";
 import "../CSS/postjobs_style.css";
 export const Postjobs = () => {
+  // const current = new Date();
+  // const date = `${current.getFullYear()}-${current.getDate()}-${current.getMonth()+1}`;
   return (
     <>
       <html>
@@ -26,8 +28,6 @@ export const Postjobs = () => {
           <title>Post Job</title>
         </head>
         <body>
-          
-
           <div className="content">
             <div className="container">
               <div className="row align-items-stretch justify-content-center no-gutters">
@@ -40,9 +40,10 @@ export const Postjobs = () => {
                       id="jobForm"
                       name="jobForm"
                     >
+                      {/* Name of the company  */}
                       <div className="row">
                         <div className="col-md-12 form-group mb-3">
-                          <label for="" className="col-form-label">
+                          <label for="" className="col-form-label-md">
                             Name of the Company
                           </label>
                           <input
@@ -51,42 +52,147 @@ export const Postjobs = () => {
                             name="name"
                             id="name"
                             placeholder="Company name"
+                            // value="Google"
                             required
                           />
                         </div>
                       </div>
 
+                      {/* Job Role */}
                       <div className="row">
                         <div className="col-md-12 form-group mb-3">
-                          <label for="budget" className="col-form-label">
-                            Job Profile
+                          <label for="Role" className="col-form-label-md">
+                            Job Role
                           </label>
                           <input
                             type="text"
                             name="name"
                             id="name"
-                            placeholder="Job Profile"
+                            placeholder="SDE"
                             className="form-control"
                             required
                           />
                         </div>
                       </div>
 
+                      {/* CTC */}
                       <div className="row">
                         <div className="col-md-12 form-group mb-3">
-                          <label for="budget" className="col-form-label">
-                            Campus Requisition file of Company
+                          <label for="CTC" className="col-form-label-md">
+                            CTC Offered
                           </label>
-                          <input type="file" className="form-control" required />
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="12"
+                            className="form-control"
+                            required
+                          />
                         </div>
                       </div>
 
+                      {/* Eligibility*/}
                       <div className="row">
                         <div className="col-md-12 form-group mb-3">
-                          <label for="budget" className="col-form-label">
-                            JD of the company
+                          <label
+                            for="Eligibility"
+                            className="col-form-label-md"
+                          >
+                            Eligibility Criteria
                           </label>
-                          <input type="file" className="form-control" />
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="7 (CGPA)"
+                            className="form-control"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      {/* Job Type */}
+                      <div className="row">
+                        <div className="col-md-12 form-group mb-3">
+                          <label for="JobType" className="col-form-label-md">
+                            Job Type
+                          </label>
+                          <div className="form-check">
+                            <input
+                              className="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault"
+                              checked
+                            />
+
+                            <label
+                              className="col-form-label-md"
+                              for="flexRadioDefault"
+                            >
+                              Full Time
+                            </label>
+                          </div>
+                          <div className="form-check">
+                            <input
+                              className="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault"
+                            />
+                            <label
+                              className="col-form-label-md"
+                              for="flexRadioDefault"
+                            >
+                              Intern
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Date and Time*/}
+                      <div className="row">
+                        <div className="col-md-12 form-group mb-3">
+                          <label for="Date" className="col-form-label-2">
+                            Deadline
+                          </label>
+                          <br />
+                          <label for="Date" className="col-form-label-sm">
+                            Date
+                          </label>
+
+                          <input
+                            type="date"
+                            className="form-control"
+                            id="date"
+                          />
+                          <label for="Time" className="col-form-label-sm">
+                            Time
+                          </label>
+                          <input
+                            type="time"
+                            className="form-control"
+                            id="date"
+                            placeholder="10:00PM"
+                          />
+                        </div>
+                      </div>
+
+                      {/* Eligibility*/}
+                      <div className="row">
+                        <div className="col-md-12 form-group mb-3">
+                          <label for="JD" className="col-form-label-md">
+                            Job Description or More Details Link (drive)
+                          </label>
+                          <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Google Drive Link"
+                            className="form-control"
+                            required
+                          />
                         </div>
                       </div>
 
